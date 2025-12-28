@@ -46,31 +46,54 @@
     <img class="continue" src="assets/continue_icon.svg">
 </div>
 
-
 <script>
-    const emailButton = document.getElementById('email-link');
-
-    emailButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        const user = "k.katiyar2006";
-        const domain = "gmail.com";
-        const fullEmail = user + "@" + domain;
-
-        window.location.href = "mailto:" + fullEmail;
-    });
-</script>
-
-<script>
-    // Grabs the first element it finds with this class
     const continueBtn = document.querySelector('.continue_prompt_container');
+    const root = document.documentElement;
 
+    // Slow Cinematic Scroll
     continueBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: window.innerHeight, 
-            behavior: 'smooth'
-        });
+        const targetPosition = window.innerHeight; 
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        const duration = 2000; 
+        let start = null;
+
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            const percentage = Math.min(progress / duration, 1);
+            const easing = 1 - Math.pow(1 - percentage, 3);
+
+            window.scrollTo(0, startPosition + (distance * easing));
+
+            if (progress < duration) {
+                window.requestAnimationFrame(step);
+            }
+        }
+        window.requestAnimationFrame(step);
+    });
+
+    //Opacity Adjustment
+    window.addEventListener('scroll', () => {
+    const scrollFraction = Math.min(window.scrollY / window.innerHeight, 1);
+    const newDarkness = 0.5 + (scrollFraction * 0.2);
+    root.style.setProperty('--scroll-opacity', newDarkness);
+    const glowTrigger = Math.max(0, (scrollFraction - 0.2) * 1.25); 
+    root.style.setProperty('--glow-opacity', glowTrigger);
+    
+
+    const continueBtnContainer = document.querySelector('.continue_prompt_container');
+    continueBtnContainer.style.opacity = 1 - (scrollFraction * 2);
+});
+
+    // Social Links Animation
+    const socialLinks = document.querySelectorAll('.socials a');
+    socialLinks.forEach((link, index) => {
+        link.style.animationDelay = `${index * 0.2}s`;
+        link.classList.add('animate');
     });
 </script>
+
 
 </body>
 </html>
