@@ -44,7 +44,6 @@
 
 <div class="continue_prompt_container">
     <img class="continue" src="assets/continue_icon.svg">
-    <p class="continue_text">Continue</p>
 </div>
 
 
@@ -58,6 +57,18 @@
         const fullEmail = user + "@" + domain;
 
         window.location.href = "mailto:" + fullEmail;
+    });
+</script>
+
+<script>
+    // Grabs the first element it finds with this class
+    const continueBtn = document.querySelector('.continue_prompt_container');
+
+    continueBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: window.innerHeight, 
+            behavior: 'smooth'
+        });
     });
 </script>
 
