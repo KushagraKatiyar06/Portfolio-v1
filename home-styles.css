@@ -120,23 +120,16 @@ body {
 }
 
 .continue_prompt_container {
-    /* Fixed keeps it relative to the screen glass, not the 200vh page */
-    position: fixed;
-    /* Exactly 5% up from the bottom of the current view */
-    bottom: 5vh;                
+    position: absolute;
+    top: 95vh; 
+    transform: translate(-50%, -150%); 
     left: 50%;                
-    transform: translateX(-50%); 
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    
     cursor: pointer;          
-    z-index: 20; /* Higher than hero and socials */
-    
-    /* Smoothly fades out when we change opacity via JS */
-    transition: opacity 0.5s ease, visibility 0.5s;
+    z-index: 10;              
 }
 
 
