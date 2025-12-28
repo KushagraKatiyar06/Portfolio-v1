@@ -1,0 +1,142 @@
+body {
+    background-image: 
+    linear-gradient(rgba(38,38,38,0.5), rgba(38,38,38,0.5)),
+    url('assets/rx7_background.jpg');
+
+    background-repeat: no-repeat;            
+    background-size: cover;                  
+    background-position: center;   
+    background-attachment: fixed;
+
+    margin: 0;
+    height: 200vh;
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 30px;
+
+    margin-top: 375px;
+    padding-left: 100px; 
+}
+
+.image_container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden; 
+    
+    box-shadow: 0 0 0 2px white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.profile_image {
+    width: 140%; 
+    height: auto; 
+    object-fit: cover;
+
+    position: relative;
+    top: -20px; 
+    left: 10px;
+}
+
+.hero_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.hero_text {
+    color: #FFFFFF;
+    font-family: "Imprima", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    max-width: 500px; 
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.location_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.location_text {
+    color: #FFF;
+    font-family: "Imprima", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.socials {
+    position: fixed;
+    bottom: 330px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.github {
+    cursor: pointer;      
+    z-index: 10;    
+}
+
+.linkedin {
+    cursor: pointer;      
+    z-index: 10;    
+}
+
+.email {
+    cursor: pointer;      
+    z-index: 10;    
+}
+
+.tiktok {
+    cursor: pointer;      
+    z-index: 10;    
+}
+
+.instagram {
+    cursor: pointer;      
+    z-index: 10;    
+}
+
+.continue_prompt_container {
+    position: absolute;
+    
+    top: 50vh;                
+    left: 50%;                
+    transform: translateX(-50%); 
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    
+    cursor: pointer;          
+    z-index: 10;              
+}
+
+.continue {
+    width: 50px;
+    height: 50px;
+}
