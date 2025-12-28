@@ -1,0 +1,57 @@
+.second-fold {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;       /* Side-by-side layout */
+    align-items: center;       /* Centers them vertically */
+    justify-content: space-between; /* Pushes one to the far left, one to the far right */
+    width: 100%;               /* Needs full width to push things apart */
+    padding: 0 5vw;            /* Keeps your 5vw symmetry */
+    box-sizing: border-box;    /* Ensures padding doesn't break the width */
+}
+
+
+.about_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    align-self: flex-start;
+}
+
+.about_heading {
+    color: #FFFFFF;
+    font-family: "Imprima", sans-serif;
+    font-size: clamp(28px, 4vw, 40px); 
+    font-weight: 400;
+    margin: 0;
+    max-width: 500px; 
+}
+
+.about_text_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.about_text {
+    color: #FFF;
+    font-family: "Imprima", sans-serif;
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 450;
+    margin: 0;
+    width: 425px;
+    line-height: 1.5;
+}

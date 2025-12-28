@@ -6,11 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home-styles.css">
+    <link rel="stylesheet" href="landing-styles.css">
+    <link rel="stylesheet" href="about-styles.css">
     <title>Kushagra Katiyar</title>
 </head>
 
 <body>
+
 <section class="first-fold">
     <div class="hero">
         <div class="image_container">
@@ -46,14 +48,57 @@
     </div>
 </section>
 
+
+
+
+
 <section class="second-fold">
+
+    <div class = "split">
+        <div class = "right_side">
+             <div class="about_container">
+            <h1 class="about_heading">Hey, I'm Kushagra...</h1>      
+            <div class="about_text_container">
+                <p class="about_text">I am a Computer Science Student at the University of Florida.
+                    I specialize in Full Stack development and further experience in Product Management
+                    and UI/UX Design. I have real world experience and leadership on campus demonstrating
+                    my skills in teamwork, communication, and problem-solving. Outside of campus my interests include,
+                    gaming, cars and Taekwondo. I post flute videos online and have accumulated over 125,000 views.
+                </p>
+            </div>
+        </div>
+
+
+
+        </div>
+
+        <div class = "left_side">
+
+
+
+
+
+        </div>
+    </div>
+
+
 </section>
+
+
+
+
+
+
+
+
+
+
 
 <script>
     const continueBtn = document.querySelector('.continue_prompt_container');
     const root = document.documentElement;
 
-    // Slow Cinematic Scroll
+    // Slow Scroll
     continueBtn.addEventListener('click', () => {
         const targetPosition = window.innerHeight; 
         const startPosition = window.scrollY;
@@ -86,7 +131,7 @@
     
 
     const continueBtnContainer = document.querySelector('.continue_prompt_container');
-    continueBtnContainer.style.opacity = 1 - (scrollFraction * 2);
+    continueBtnContainer.style.opacity = 1 - (scrollFraction * 2); 
 });
 
     // Social Links Animation

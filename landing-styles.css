@@ -10,30 +10,6 @@
     overflow: hidden;
 }
 
-.second-fold {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-}
-
-.section-title {
-    color: #FFFFFF;
-    font-family: "Imprima", sans-serif;
-    font-size: clamp(32px, 5vw, 48px);
-    letter-spacing: 8px;
-    margin: 0;
-}
-
-.section-subtitle {
-    color: rgba(255, 255, 255, 0.7);
-    font-family: "Imprima", sans-serif;
-    font-size: 18px;
-    margin-top: 10px;
-}
 
 body {
     background-image: 
@@ -179,7 +155,7 @@ body {
 }
 
 .continue_prompt_container {
-    position: absolute;
+    position: fixed;
     top: 95vh; 
     transform: translate(-50%, -150%); 
     left: 50%;                
