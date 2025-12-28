@@ -9,8 +9,9 @@ body {
     background-attachment: fixed;
 
     margin: 0;
-    height: 200vh;
-    position: relative;
+    min-height: 200vh;
+    position: relative; 
+    overflow-x: hidden; 
 }
 
 .hero {
@@ -20,8 +21,8 @@ body {
     justify-content: flex-start; 
     gap: 30px;
 
-    margin-top: 375px;
-    padding-left: 100px; 
+    margin-top: 40vh; 
+    padding-left: 5vw; 
 }
 
 .image_container {
@@ -36,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    flex-shrink: 0;
+    flex-shrink: 0; 
 }
 
 .profile_image {
@@ -59,7 +60,7 @@ body {
 .hero_text {
     color: #FFFFFF;
     font-family: "Imprima", sans-serif;
-    font-size: 40px;
+    font-size: clamp(28px, 4vw, 40px); 
     font-weight: 400;
     margin: 0;
     max-width: 500px; 
@@ -69,7 +70,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
 }
 
@@ -81,48 +82,34 @@ body {
 .location_text {
     color: #FFF;
     font-family: "Imprima", sans-serif;
-    font-size: 24px;
+    font-size: clamp(18px, 2vw, 24px);
     font-weight: 400;
     margin: 0;
 }
 
 .socials {
     position: fixed;
-    bottom: 330px;
-    right: 50px;
+    bottom: 35%; 
+    right: 4vw;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.github {
+.github, .linkedin, .email, .tiktok, .instagram {
     cursor: pointer;      
-    z-index: 10;    
+    z-index: 10;
+    width: 45px; 
+    height: 45px;
+    transition: transform 0.3s ease;
 }
 
-.linkedin {
-    cursor: pointer;      
-    z-index: 10;    
-}
-
-.email {
-    cursor: pointer;      
-    z-index: 10;    
-}
-
-.tiktok {
-    cursor: pointer;      
-    z-index: 10;    
-}
-
-.instagram {
-    cursor: pointer;      
-    z-index: 10;    
+.github:hover, .linkedin:hover, .email:hover, .tiktok:hover, .instagram:hover {
+    transform: scale(1.1); 
 }
 
 .continue_prompt_container {
     position: absolute;
-    
     top: 50vh;                
     left: 50%;                
     transform: translateX(-50%); 
@@ -136,7 +123,13 @@ body {
     z-index: 10;              
 }
 
+
 .continue {
     width: 50px;
     height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.continue:hover {
+    transform: scale(1.1);
 }
