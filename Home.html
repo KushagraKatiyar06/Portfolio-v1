@@ -25,16 +25,41 @@
         </div>
     </div>
 </div> <div class="socials">
+    <a href="https://github.com/KushagraKatiyar06" target="_blank">
     <img class="github" src="assets/github_icon.svg">
-    <img class="linkedin" src="assets/linkedin_icon.svg">
-    <img class="email" src="assets/email_icon.svg">
-    <img class="instagram" src="assets/instagram_icon.svg">
-    <img class="tiktok" src="assets/tiktok_icon.svg">
+    </a>
+
+    <a href = "https://www.linkedin.com/in/kushagrakatiyar/" target = "_blank">
+        <img class="linkedin" src="assets/linkedin_icon.svg">
+    </a>
+
+    <a href="https://www.instagram.com/just_kushagra/" target="_blank">
+        <img class="instagram" src="assets/instagram_icon.svg">
+    </a>
+    
+    <a href="https://www.tiktok.com/@just_kushagra" target="_blank">
+        <img class="tiktok" src="assets/tiktok_icon.svg">
+    </a>
 </div>
 
 <div class="continue_prompt_container">
     <img class="continue" src="assets/continue_icon.svg">
+    <p class="continue_text">Continue</p>
 </div>
+
+
+<script>
+    const emailButton = document.getElementById('email-link');
+
+    emailButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const user = "k.katiyar2006";
+        const domain = "gmail.com";
+        const fullEmail = user + "@" + domain;
+
+        window.location.href = "mailto:" + fullEmail;
+    });
+</script>
 
 </body>
 </html>
