@@ -60,8 +60,6 @@ body {
     align-items: center;
 
     flex-shrink: 0; 
-
-    
 }
 
 .profile_image {
@@ -78,17 +76,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 1.5rem;
 
 }
 
 .hero_text {
     color: #FFFFFF;
     font-family: "Imprima", sans-serif;
-    font-size: clamp(28px, 4vw, 40px); 
+    font-size: clamp(1rem, 4vw, 2.5rem); 
     font-weight: 400;
     margin: 0;
-    max-width: 500px; 
+    max-width: 20rem; 
 
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
@@ -98,7 +96,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .location_icon {
@@ -109,10 +107,9 @@ body {
 .location_text {
     color: #FFF;
     font-family: "Imprima", sans-serif;
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 400;
     margin: 0;
-
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
@@ -219,18 +216,18 @@ body::after {
     width: 100%;
     left: 0;
     position: fixed; 
-    top: 1vh;     
+    top: 1rem;     
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; 
-    gap: 40px;
+    gap: 2.5rem;
 
     opacity: var(--glow-opacity, 0);
     transition: opacity 0.1s ease;
 
-    padding: 15px 0; 
+    padding: 2rem 0; 
     pointer-events: none;
     z-index: 100;
 }
@@ -277,12 +274,12 @@ body::after {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 40px;
+    gap: 2rem;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
     font-family: "Imprima", sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .nav_item {
@@ -290,6 +287,8 @@ body::after {
     cursor: pointer;
     transition: color 0.3s ease;
     color: rgba(255, 255, 255, 0.6); 
+
+    transition: transform 0.3s ease;
 }
 
 .nav_item.active {
@@ -301,6 +300,7 @@ body::after {
 .nav_item:hover {
     color: #FFFFFF;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
 }
 
 

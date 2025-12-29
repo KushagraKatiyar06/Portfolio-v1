@@ -1,3 +1,10 @@
+.second-fold {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
 
 .display_window {
     position: relative;
@@ -34,43 +41,106 @@
 #about.content_screen {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2.5rem;
     padding-left: 10vh; 
 }
 
 .bio_container {
     width: 100%;
-    max-width: 450px; 
+    max-width: 35rem; 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .bio_heading {
-    font-size: clamp(24px, 4vw, 32px);
-    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 400;
     margin-bottom: 0;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 .bio {
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 400;
     margin: 0;
-    max-width: 450px; 
+    max-width: 35rem; 
     line-height: 1.5;
     margin-top: 0;
 }
 
+.highlight{
+    color: #48bcff;
+    text-shadow: 0 0 8px #48bcff;
+}
+
+.highlight2 {
+    color: #ff9361;
+    text-shadow: 0 0 8px #ff9361;
+}
+
+
+
+.technical_container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.line1 {
+    padding-top: 0rem;
+    width: 35rem;
+}
+
+.skills_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.skills_inner_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.python, .cpp, .javascript, .html, .css, .react, .nodejs, .nextjs, .postgres, .cloudflare, .git {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.tech_header {
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-weight: 400;
+    margin-right: 1rem;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    width: 11rem;
+}
+
+.tech_icons {
+    display: flex;
+    gap: 1.25rem;
+    width: 35rem;
+}
+
+
+.css {
+    margin-left: -0.25rem;
+}
+
 #experience.content_screen {
     padding-left: 5vw; 
-    max-width: 800px;
+    max-width: 50rem;
 }
 
 
 #projects.content_screen {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 2rem;
 }
 
 
