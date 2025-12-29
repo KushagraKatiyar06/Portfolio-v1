@@ -14,7 +14,7 @@
     justify-content: center;
     
     position: fixed; 
-    top: 10px;      
+    top: -15px;      
 
     display: flex;
     flex-direction: row;
