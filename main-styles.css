@@ -14,7 +14,7 @@
     justify-content: center;
     
     position: fixed; 
-    top: 20px;      
+    top: 10px;      
 
     display: flex;
     flex-direction: row;
@@ -32,8 +32,8 @@
 }
 
 .nav_logo_container{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     overflow: hidden;
 
