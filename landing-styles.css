@@ -114,7 +114,6 @@ body {
     top: 50vh;           
     transform: translateY(-50%); 
 
-
     right: 5vw;          
     
     display: flex;
@@ -194,7 +193,7 @@ body::after {
     
     opacity: var(--glow-opacity, 0);
     
-    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8)) brightness(1.5);
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8)) brightness(2);
     
     pointer-events: none; 
     z-index: -1; 

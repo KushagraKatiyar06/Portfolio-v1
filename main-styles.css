@@ -17,6 +17,9 @@
     justify-content: center;
     gap: 40px;
 
+    opacity: var(--glow-opacity, 0);
+    transition: opacity 0.1s ease;
+
     padding: 15px 30px;           
     transform: translateY(50%); 
 }

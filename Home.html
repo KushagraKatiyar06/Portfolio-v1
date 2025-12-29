@@ -53,7 +53,7 @@
 
 <section class="second-fold">
     <nav class = 'navbar'>
-        <div class = "nav_logo_container">
+        <div class = "nav_logo_container" id = "back_to_top">
             <img class = "navbar_image" src="assets/profile_picture_landing.jpg">
         </div>
 
@@ -70,6 +70,8 @@
 
 
 <script>
+
+    //Section 1
     const continueBtn = document.querySelector('.continue_prompt_container');
     const root = document.documentElement;
 
@@ -99,7 +101,7 @@
     //Opacity Adjustment
     window.addEventListener('scroll', () => {
     const scrollFraction = Math.min(window.scrollY / window.innerHeight, 1);
-    const newDarkness = 0.5 + (scrollFraction * 0.2);
+    const newDarkness = 0.5 + (scrollFraction * 0.3);
     root.style.setProperty('--scroll-opacity', newDarkness);
     const glowTrigger = Math.max(0, (scrollFraction - 0.2) * 1.25); 
     root.style.setProperty('--glow-opacity', glowTrigger);
@@ -115,6 +117,18 @@
         link.style.animationDelay = `${index * 0.2}s`;
         link.classList.add('animate');
     });
+
+
+    //Section 2
+    const logoBtn = document.getElementById("back_to_top");
+
+    logoBtn.addEventListener('click', () => {
+        window.scrollTo ({ 
+            top: 0, 
+            behavior: 'smooth' 
+        });
+    });
+
 </script>
 
 
