@@ -60,6 +60,8 @@ body {
     align-items: center;
 
     flex-shrink: 0; 
+
+    
 }
 
 .profile_image {
@@ -77,6 +79,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+
 }
 
 .hero_text {
@@ -86,6 +89,8 @@ body {
     font-weight: 400;
     margin: 0;
     max-width: 500px; 
+
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 .location {
@@ -107,6 +112,8 @@ body {
     font-size: clamp(18px, 2vw, 24px);
     font-weight: 400;
     margin: 0;
+
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 .socials {
@@ -127,7 +134,10 @@ body {
     width: 30px; 
     height: 30px;
     transition: transform 0.3s ease;
+
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
 }
+
 
 .github:hover, .linkedin:hover, .email:hover, .tiktok:hover, .instagram:hover {
     transform: scale(1.1); 
@@ -170,6 +180,9 @@ body {
     width: 25px;
     height: 25px;
     transition: transform 0.3s ease;
+
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
+
 }
 
 .continue:hover {

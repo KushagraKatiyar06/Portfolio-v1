@@ -70,3 +70,29 @@ let autoScrollInterval = null;
     link.style.animationDelay = `${index * 0.2}s`;
     link.classList.add('animate');
     });
+
+    // Dynamic Content Box
+    const navItems = document.querySelectorAll('.nav_item');
+const screens = document.querySelectorAll('.content_screen');
+
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const targetId = item.getAttribute('data-target');
+
+        // Check if targetId exists to prevent errors
+        if (!targetId) return;
+
+        // Remove active from all nav items
+        navItems.forEach(nav => nav.classList.remove('active'));
+        
+        // Remove active from all content screens
+        screens.forEach(screen => screen.classList.remove('active'));
+
+        // Set clicked item and its target screen to active
+        item.classList.add('active');
+        const targetScreen = document.getElementById(targetId.toLowerCase());
+        if (targetScreen) {
+            targetScreen.classList.add('active');
+        }
+    });
+});
