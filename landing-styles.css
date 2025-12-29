@@ -121,7 +121,7 @@ body {
     top: 50vh;           
     transform: translateY(-50%); 
 
-    right: 5vw;          
+    right: 6vw;          
     
     display: flex;
     flex-direction: column;
@@ -213,4 +213,109 @@ body::after {
 
     opacity: var(--glow-opacity); 
     transition: opacity 0.1s ease; 
+}
+
+.navbar {
+    width: 100%;
+    left: 0;
+    position: fixed; 
+    top: 1vh;     
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px;
+
+    opacity: var(--glow-opacity, 0);
+    transition: opacity 0.1s ease;
+
+    padding: 15px 0; 
+    pointer-events: none;
+    z-index: 100;
+}
+
+.nav_item, .nav_logo_container {
+    pointer-events: auto;
+}
+
+.nav_logo_container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    box-shadow: 0 0 0 2px white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav_logo_container:hover {
+    transform: scale(1.1); 
+}
+
+
+.navbar_image {
+    width: 99%;
+    height: auto;
+    object-fit: cover;
+
+    position: relative;
+    top: 2px;
+    left: -0.5px;
+}
+
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: "Imprima", sans-serif;
+    font-size: 20px;
+}
+
+.nav_item {
+    position: relative; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+.nav_item.active {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.nav_item:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+
+.nav_item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%; 
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.nav_item.active::after {
+    width: 100%; 
 }
