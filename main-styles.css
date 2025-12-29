@@ -33,12 +33,19 @@
     transform: translateY(0);
 }
 
-#about.content_screen {
+#about.content_screen, #experience.content_screen, #projects.content_screen {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding-left: 20vh; 
 }
+
+#experience.content_screen{
+    padding-top: 3.5vh; 
+    flex-direction: row;
+    height: 200vh;
+}
+
 
 .bio_container {
     width: 100%;
@@ -59,7 +66,7 @@
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 400;
     margin: 0;
-    max-width: 35rem; 
+    max-width: 33rem; 
     line-height: 1.5;
 }
 
@@ -76,7 +83,7 @@
 .technical_container {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem; 
+    margin-top: 0rem; 
 }
 
 .line1 {
@@ -84,6 +91,15 @@
     width: 35rem; 
     opacity: 0.6;
 }
+
+.line2 {
+    height: 100%;
+    margin-top: 4.25rem;
+
+    ;
+}
+
+
 
 .skills_container {
     display: flex;
@@ -164,4 +180,119 @@
 .icon_wrapper:hover::after {
     opacity: 1;
     transform: translateX(-50%) translateY(5px);
+}
+
+.timeline_container {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    height: 100%;
+    width: 5rem;
+    display: flex;
+    width: 40%;
+    height: 100%;
+}
+
+.experience_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    width: 100%;  
+}
+
+.experience_header {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 400;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    
+    align-self: center;
+}
+
+.role {
+    margin-top: 0;
+}
+
+.place_container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.place_logo {
+    margin-top: 0;  
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.place_and_role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.place_name {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.role_name {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.duration_style {
+    display: flex;
+    flex-direction: column; 
+    margin-left: auto;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+.duration_text{
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+    margin-bottom: 0.25rem;
+}
+
+.type_text {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.download_button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.download_logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+    margin-right: 0.5rem;
+
+    
+}
+.download_text {
+    color: #FFFFFF;
+    font-family: "Imprima", sans-serif;
+    font-size: 1rem;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    text-shadow: 0 0 8px #ffffff;
+    
 }
