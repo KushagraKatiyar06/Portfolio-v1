@@ -1,15 +1,20 @@
 .second-fold {
+
     position: relative;
+    width: 100%;
+    overflow: hidden;
+
+
     min-height: 1000vh;
     width: 100%;
     display: flex;
+
     justify-content: center;
     align-items: flex-start;
     z-index: 5;
     flex-direction: row;
 
     padding-top: 20vh;
-    padding-left: -5vh;
 }
 
 .navbar {
