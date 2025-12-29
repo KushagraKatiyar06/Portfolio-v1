@@ -1,9 +1,8 @@
 .second-fold {
     position: relative;
-    height: 200vh;
+    min-height: 200vh;
     width: 100%;
     overflow: hidden;
-
 }
 
 .display_window {
@@ -15,18 +14,15 @@
     pointer-events: none; 
 }
 
-
 .content_screen {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-
     opacity: 0;
     pointer-events: none;
     transform: translateY(15px); 
     transition: opacity 0.4s ease, transform 0.4s ease;
-
     color: white;
     font-family: "Imprima", sans-serif;
 }
@@ -37,12 +33,11 @@
     transform: translateY(0);
 }
 
-
 #about.content_screen {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    padding-left: 10vh; 
+    gap: 1rem;
+    padding-left: 20vh; 
 }
 
 .bio_container {
@@ -66,10 +61,9 @@
     margin: 0;
     max-width: 35rem; 
     line-height: 1.5;
-    margin-top: 0;
 }
 
-.highlight{
+.highlight {
     color: #48bcff;
     text-shadow: 0 0 8px #48bcff;
 }
@@ -78,8 +72,6 @@
     color: #ff9361;
     text-shadow: 0 0 8px #ff9361;
 }
-
-
 
 .technical_container {
     display: flex;
@@ -105,19 +97,6 @@
     align-items: center;
 }
 
-.tech_icons img {
-    width: 3.5rem;
-    height: 3.5rem;
-    object-fit: contain;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-    transition: transform 0.3s ease;
-}
-
-.tech_icons img:hover {
-    transform: scale(1.15);
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-}
-
 .tech_header {
     font-size: clamp(1rem, 2.5vw, 1.25rem); 
     font-weight: 400;
@@ -133,17 +112,56 @@
     align-items: center;
 }
 
+.icon_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tech_icons img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.icon_wrapper:hover img {
+    transform: scale(1.15) translateY(-5px);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
 .javascript {
     transform: scale(0.85);
 }
 
 
-#about.content_screen {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-left: 10vh; 
+.icon_wrapper::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -2.8rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    
+    background: rgba(0, 0, 0, 0.85);
+    color: #FFFFFF;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-family: "Imprima", sans-serif;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 20;
 }
 
-
-
+.icon_wrapper:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(5px);
+}

@@ -41,7 +41,7 @@ body {
     transform: translateY(-50%); 
 
     left: 0;
-    padding-left: 5vw;   
+    padding-left: 10vw;   
     
     width: auto;         
     z-index: 5;
@@ -118,12 +118,13 @@ body {
     top: 50vh;           
     transform: translateY(-50%); 
 
-    right: 6vw;          
+    right: 2vw;          
     
     display: flex;
     flex-direction: column;
     gap: 25px;
     z-index: 10;
+    opacity: var(--glow-opacity, 0);
 }
 .github, .linkedin, .email, .tiktok, .instagram {
     cursor: pointer;      
