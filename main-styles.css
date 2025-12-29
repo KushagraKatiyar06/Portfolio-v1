@@ -1,6 +1,6 @@
 .second-fold {
     position: relative;
-    min-height: 100vh;
+    min-height: 1000vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -10,7 +10,12 @@
 }
 
 .navbar {
-    position: relative;
+    width: 100%;
+    justify-content: center;
+    
+    position: fixed; 
+    top: 20px;      
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,6 +27,8 @@
 
     padding: 15px 30px;           
     transform: translateY(50%); 
+
+    position: fixed;
 }
 
 .nav_logo_container{
@@ -48,13 +55,13 @@
 
 
 .navbar_image {
-    width: 140%;
+    width: 99%;
     height: auto;
     object-fit: cover;
 
     position: relative;
-    top: -2px;
-    left: 1px;
+    top: 2px;
+    left: -0.5px;
 }
 
 
