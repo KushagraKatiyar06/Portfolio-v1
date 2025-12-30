@@ -47,8 +47,7 @@
     gap: 1rem;
 }
 
-/* EXPERIENCE  */
-/* EXPERIENCE SECTION SPECIFICS */
+/* Experience Section */
 #experience.content_screen {
     flex-direction: row;
     align-items: stretch; 
@@ -67,16 +66,24 @@
 .experience_container {
     display: flex;
     flex-direction: column;
-    gap: 3rem; 
+    gap: 1.5rem; 
     width: 100%;  
 }
 
-.experience_header {
+.experience_header, .leadership_header, .involvement_header {
     font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 00;
-    margin: 0 0 1.5rem 0;
+    font-weight: 400; 
+    margin: 0; 
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    margin-bottom: -1rem;
+}
+
+.experience_header_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 /* Bio */
@@ -118,7 +125,7 @@
     text-shadow: 0 0 8px #ffd166;
 }
 
-/* LOGO CONTAINER */
+/* Logo Container */
 .place_logo_container {
     width: 3rem;
     height: 3rem;
@@ -231,6 +238,9 @@
 }
 
 /* Roles */
+.role {
+    margin-bottom: 2.5rem;
+}
 .place_container {
     display: flex;
     flex-direction: row;
@@ -282,7 +292,7 @@
 }
 
 .role_description {
-    max-width: 40rem;
+    max-width: 30rem;
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
@@ -291,9 +301,10 @@
 
 /* Resume Button */
 .resume_download {
-    margin-left: 26rem;
-    margin-bottom: -6.25rem;
+    margin-top: 0.75rem;
     position: relative;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .download_button {
