@@ -1,3 +1,4 @@
+/* Second Fold and Display  */
 .second-fold {
     position: relative;
     min-height: 300vh;
@@ -33,7 +34,6 @@
     transform: translateY(0);
 }
 
-
 #about.content_screen, 
 #experience.content_screen, 
 #projects.content_screen {
@@ -42,51 +42,12 @@
     padding-top: 3.5vh; 
 }
 
-#about.content_screen, #projects.content_screen {
+/* About Section */
+#about.content_screen {
     flex-direction: column;
     gap: 1rem;
 }
 
-/* Experience Section */
-#experience.content_screen {
-    flex-direction: column;
-    align-items: stretch; 
-    min-height: 100vh;
-}
-
-
-.timeline_container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    width: 35%;
-    max-width: 50rem;
-}
-
-.experience_container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; 
-    width: 100%;  
-}
-
-.experience_header, .leadership_header, .involvement_header {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 400; 
-    margin: 0; 
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-}
-
-.experience_header_row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Bio */
 .bio_container {
     width: 100%;
     max-width: 35rem; 
@@ -125,40 +86,17 @@
     text-shadow: 0 0 8px #ffd166;
 }
 
-/* Logo Container */
-.place_logo_container {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    overflow: hidden;
-
-    flex-shrink: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.place_logo {
-    width: 100%;
-    height: auto;
-
-    position: relative;
-    object-fit: cover;
-}
-
-
-/* Skills */
-.technical_container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0rem; 
-}
-
 .line1 {
     padding: 1rem 0;
     width: 35rem; 
     opacity: 0.6;
+}
+
+/* Technical Skills */
+.technical_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem; 
 }
 
 .skills_container {
@@ -202,13 +140,13 @@
     cursor: pointer;
 }
 
+.javascript {
+    transform: scale(0.85);
+}
+
 .icon_wrapper:hover img {
     transform: scale(1.15) translateY(-5px);
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-}
-
-.javascript {
-    transform: scale(0.85);
 }
 
 .icon_wrapper::after {
@@ -237,69 +175,45 @@
     transform: translateX(-50%) translateY(5px);
 }
 
-/* Roles */
-.role {
-    margin-bottom: 2.5rem;
-}
-.place_container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 0.75rem;
+/* Experience Section */
+#experience.content_screen {
+    flex-direction: column;
+    align-items: stretch; 
+    min-height: 100vh;
 }
 
-.place_and_role {
+.timeline_container {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 4rem;
+    width: 35%;
+    max-width: 50rem;
 }
 
-.place_name {
-    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-    font-weight: 600;
-    margin: 0;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-
-.role_name {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0;
-    opacity: 0.9;
-}
-
-.duration_style {
+.experience_container {
     display: flex;
-    flex-direction: column; 
-    margin-left: auto;
-    text-align: right;
-    gap: 0.3rem;
-
+    flex-direction: column;
+    gap: 1.5rem; 
+    width: 100%;  
 }
 
-.duration_text {
-    font-size: 0.9rem;
-    margin: 0;
-    opacity: 0.8;
+.experience_header_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.type_text {
-    font-size: 0.85rem;
-    margin: 0.2rem 0 0 0;
-    color: #48bcff;
-    text-shadow: 0 0 5px rgba(72, 188, 255, 0.4);
+.experience_header, .leadership_header, .involvement_header {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 400; 
+    margin: 0; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-.role_description {
-    max-width: 30rem;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-    padding-left: 4rem; 
-}
-
-/* Resume Button */
+/* Resume Download */
 .resume_download {
     position: relative;
     display: flex;
@@ -330,6 +244,86 @@
     font-size: 1rem;
 }
 
+/* Roles */
+.role {
+    margin-bottom: 2.5rem;
+}
+
+.place_container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.place_logo_container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place_logo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+}
+
+.place_and_role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.place_name {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.role_name {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.duration_style {
+    display: flex;
+    flex-direction: column; 
+    margin-left: auto;
+    text-align: right;
+    gap: 0.3rem;
+}
+
+.duration_text {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.type_text {
+    font-size: 0.85rem;
+    margin: 0.2rem 0 0 0;
+    color: #b187ff;
+    text-shadow: 0 0 5px rgba(151, 72, 255, 0.4);
+}
+
+.role_description {
+    max-width: 30rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 4rem; 
+}
+
 .role_skills {
     padding-left: 4rem; 
     margin-top: 1.5rem;
@@ -337,7 +331,6 @@
     flex-direction: row;
     gap: 1rem;
 }
-
 
 .role_skills .tech_icons img {
     width: 2.2rem;   
@@ -348,20 +341,23 @@
     cursor: pointer;
 }
 
-
 .role_skills .icon_wrapper:hover img {
     transform: scale(1.2) translateY(-3px);
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
 }
 
-
 .role_skills .icon_wrapper::after {
     bottom: -2.2rem; 
 }
 
-/* Mobile */
-@media screen and (max-width: 768px) {
+/* Projects Section  */
+#projects.content_screen {
+    flex-direction: column;
+    gap: 1rem;
+}
 
+/*  Mobile Layout  */
+@media screen and (max-width: 768px) {
     .second-fold {
         min-height: 350vh;
     }
@@ -374,14 +370,9 @@
         padding-top: 10vh;
     }
 
-
     #experience.content_screen {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .line2 {
-        display: none; 
     }
 
     .timeline_container {
@@ -431,4 +422,3 @@
         align-self: flex-start;
     }
 }
-
