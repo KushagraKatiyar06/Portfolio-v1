@@ -301,7 +301,6 @@
 
 /* Resume Button */
 .resume_download {
-    margin-top: 0.75rem;
     position: relative;
     display: flex;
     justify-content: flex-start;
