@@ -57,17 +57,40 @@
 }
 
 .bio_heading {
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
     font-weight: 400;
     margin: 0; 
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-.bio {
-    font-size: clamp(1rem, 2vw, 1.25rem);
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.location_icon {
+    width: 18px;
+    height: 18px;
+}
+
+
+.location_text {
+    color: #FFF;
+    font-family: "Imprima", sans-serif;
+    font-size: clamp(0.75rem, 2vw, 1rem);
     font-weight: 400;
     margin: 0;
-    max-width: 33rem; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.bio {
+    font-size: clamp(1rem, 2vw, 1.10rem);
+    font-weight: 400;
+    margin: 0;
+    max-width: 31rem; 
     line-height: 1.5;
 }
 
@@ -88,7 +111,7 @@
 
 .line1 {
     padding: 1rem 0;
-    width: 35rem; 
+    width: 31rem; 
     opacity: 0.6;
 }
 
@@ -102,21 +125,22 @@
 .skills_container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; 
+    gap: 1.15rem; 
 }
 
 .skills_inner_container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .tech_header {
-    font-size: clamp(1rem, 2.5vw, 1.25rem); 
+    font-size: clamp(0.9rem, 2.5vw, 1.10rem); 
     font-weight: 400;
     margin: 0;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-    width: 8.5rem; 
+    width: 7.25rem; 
     flex-shrink: 0;
 }
 
@@ -132,8 +156,8 @@
 }
 
 .tech_icons img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: contain;
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
     transition: all 0.3s ease;
