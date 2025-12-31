@@ -100,41 +100,19 @@ body {
 }
 
 .laptop_icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 .specialty_text {
     color: #FFF;
     font-family: "Imprima", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(0.75rem, 2vw, 1rem);
     font-weight: 400;
     margin: 0;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-.location {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.5rem;
-}
-
-.location_icon {
-    width: 20px;
-    height: 20px;
-}
-
-
-.location_text {
-    color: #FFF;
-    font-family: "Imprima", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    font-weight: 400;
-    margin: 0;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-}
 
 .socials {
     position: fixed;
