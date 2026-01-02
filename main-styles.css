@@ -384,6 +384,34 @@
     gap: 1rem;
 }
 
+.projects_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    max-width: 90%;
+}
+
+.project_container_heading, .projects_container_heading, .design_container_heading {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    font-weight: 400; 
+    margin: 0; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+
+}
+
+.live_container, .projects_container, .design_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.live_projects, .projects_projects, .design_projects {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 /*  Mobile Layout  */
 @media screen and (max-width: 768px) {
     .second-fold {
