@@ -20,4 +20,4 @@ Open index.html in a browser.
 
 Ensure the assets/ directory is present to load icons and backgrounds.
 
-# Developed by Kushagra Katiyar
+### Developed by Kushagra Katiyar
