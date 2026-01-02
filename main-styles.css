@@ -392,7 +392,7 @@
     max-width: 90%;
 }
 
-.project_container_heading, .projects_container_heading, .design_container_heading {
+.live_container_heading, .projects_container_heading, .design_container_heading{
     font-size: clamp(1.25rem, 4vw, 1.75rem);
     font-weight: 400; 
     margin: 0; 
@@ -404,12 +404,14 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 100%;
 }
 
 .live_projects, .projects_projects, .design_projects {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    max-width: 100%;
 }
 
 /*  Mobile Layout  */
