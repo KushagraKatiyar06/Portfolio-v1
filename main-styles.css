@@ -388,7 +388,7 @@
     max-width: 90%;
 }
 
-/* FIX: Ensure spacing between project types is consistent */
+
 .projects_container, .design_container {
     margin-top: 2rem;
 }

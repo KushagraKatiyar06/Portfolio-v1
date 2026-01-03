@@ -16,7 +16,7 @@ let autoScrollInterval = null;
         if (activeScreen && secondFold) {
             const contentHeight = activeScreen.offsetHeight;
             const navbarHeight = 150; 
-            secondFold.style.minHeight = `${contentHeight + navbarHeight + 50}px`;
+            secondFold.style.minHeight = `${contentHeight + navbarHeight + 500}px`;
         }
     }
 
