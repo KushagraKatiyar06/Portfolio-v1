@@ -1,6 +1,6 @@
 # Kushagra Katiyar | Portfolio.v1
 
-A personal portfolio website featuring an aesthetic (RX-7) with custom scroll interactions, dynamic tab switching, and responsive design.
+A personal portfolio website featuring an aesthetic (RX-7) with custom scroll interactions, dynamic tab switching, and responsive design. The background image is taken by me on Need for Speed 2015.
 
 # Tech Stack
 
@@ -10,7 +10,7 @@ Logic: JavaScript.
 
 Fonts: Imprima (via Google Fonts).
 
-Visuals: Custom SVG icons and automotive photography.
+Visuals: Custom SVG icons and photography.
 
 # Setup
 
