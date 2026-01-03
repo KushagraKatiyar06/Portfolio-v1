@@ -61,7 +61,6 @@
     font-weight: 400;
     margin: 0; 
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-
     margin-bottom: 1rem;
 }
 
@@ -76,10 +75,8 @@
 .location_icon {
     width: 28px;
     height: 28px;
-
     margin-right: 0.5rem;
 }
-
 
 .location_text {
     color: #FFF;
@@ -136,7 +133,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
 
 .tech_header {
@@ -384,7 +380,7 @@
     gap: 1rem;
 }
 
-.projects_container {
+.live_container, .projects_container, .design_container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -392,11 +388,9 @@
     max-width: 90%;
 }
 
-.live_container, .projects_container, .design_container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 100%;
+/* FIX: Ensure spacing between project types is consistent */
+.projects_container, .design_container {
+    margin-top: 2rem;
 }
 
 .heading_live_container {
@@ -422,7 +416,6 @@
     max-width: 100%;
 }
 
-
 .card_container {
     text-decoration: none;
     color: inherit;
@@ -441,13 +434,7 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-
-.live_project_card:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.project_card:hover{
+.live_project_card:hover, .project_card:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -529,7 +516,6 @@
     max-width: 90%;
 }
 
-
 .icon_wrapper_p { 
     position: relative; 
 }
@@ -537,11 +523,13 @@
 .tech_icons_p img { 
     width: 2rem; 
     height: 2rem; 
-    transition: transform 0.3s ease; cursor: pointer; }
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
 
 .icon_wrapper_p:hover img { 
-    transform: scale(1.2) 
-    translateY(-3px); }
+    transform: scale(1.2) translateY(-3px); 
+}
 
 .icon_wrapper_p:after {
     content: attr(data-label);
@@ -550,7 +538,6 @@
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.85);
-
     color: white;
     padding: 0.3rem 0.6rem;
     border-radius: 4px;
@@ -558,12 +545,9 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-
 }
 
 .icon_wrapper_p:hover::after { 
     opacity: 1; 
-    transform: 
-    translateX(-50%) 
-    translateY(3px);
- }
+    transform: translateX(-50%) translateY(3px);
+}
