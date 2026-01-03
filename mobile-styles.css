@@ -1,15 +1,25 @@
 @media screen and (max-width: 768px) {
-    
     body::after {
         display: none !important;
     }
 
-    body {
+    html {
+        background-image: 
+            linear-gradient(rgba(0,0,0, var(--scroll-opacity)), rgba(0,0,0, var(--scroll-opacity))),
+            url('assets/rx7_background.jpg');
+        background-repeat: no-repeat;            
+        background-size: cover;                  
+        background-position: center;   
         background-attachment: scroll; 
+    }
+
+    body {
+        background-image: none !important;
+        background-attachment: scroll;
         min-height: 100vh;
     }
 
-    /* Landing Section */
+    /* Landing Hero Alignment */
     .hero {
         flex-direction: column;
         padding-left: 0;
@@ -17,126 +27,107 @@
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
-        gap: 20px;
+        gap: 1.5rem;
     }
 
     .hero_text_container {
-        align-items: center;
+        align-items: center; 
+        width: 100%;
+    }
+
+    .hero_text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .specialty, .location {
+        justify-content: center; 
+        width: 100%;
+    }
+
+    .location_icon {
+        margin-right: 0.5rem; 
     }
 
     .image_container {
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: 160px;
     }
 
-    .socials {
-        right: 5vw;
-        gap: 20px;
-    }
-
-    /* Navbar */
+    /* Navbar Optimization */
     .navbar {
-        width: 90%;
-        padding: 0.5rem 1rem;
+        width: 85%;
+        padding: 0.6rem 1.2rem;
         gap: 1rem;
-        top: 0.5rem;
-        background-color: rgba(0, 0, 0, 0.9); 
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        top: 1rem;
+        background-color: rgba(0, 0, 0, 0.95);
+        opacity: var(--glow-opacity, 0);
+        border: 1px solid rgba(255, 255, 255, 0.3);
         pointer-events: auto;
-        opacity: 1 !important; 
     }
 
     .nav_links {
         gap: 1rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
-    .nav_logo_container {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* Content Screens */
     #about.content_screen, 
     #experience.content_screen, 
     #projects.content_screen {
-        padding-left: 5vw;
-        padding-right: 5vw;
-        padding-top: 10vh;
-        width: 90%;
+        padding-left: 0; 
+        padding-right: 0;
+        align-items: center; 
+        width: 100%;
     }
 
-    /* Bio & Skills */
-    .bio_container, .bio {
-        max-width: 100%;
+    .bio_container, .technical_container, .timeline_container, .projects_container {
+        width: 90%;
+        max-width: 90%;
     }
 
     .line1 {
-        width: 100%;
-    }
-
-    .skills_inner_container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .tech_icons {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .tech_icons img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-    /* Experience Section */
-    .timeline_container {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .experience_header_row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .place_container {
-        flex-wrap: wrap;
+        width: 90%;
     }
 
     .duration_style {
         margin-left: 0;
         text-align: left;
         width: 100%;
-        margin-top: 0.5rem;
+        margin-top: 0.25rem;
     }
 
-    .role_description {
+    .role_description, .role_skills {
         padding-left: 0;
-        font-size: 0.9rem;
+        width: 100%;
     }
 
-    .role_skills {
-        padding-left: 0;
-    }
-
-    /* Projects Section */
     .live_projects, .projects_projects {
+        justify-content: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .card_container {
+        width: 100%; 
+        display: flex;
         justify-content: center;
     }
 
     .live_project_card, .project_card {
-        width: 85vw;
+        width: 100%; 
+        max-width: 22rem; 
         min-height: auto;
         max-height: none;
         padding-bottom: 1.5rem;
     }
 
-    .project_title {
-        min-height: auto;
+    .project_image {
+        width: calc(100% - 1rem); 
+        margin: 0.5rem auto 0 auto;
+    }
+
+    .project_info {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
     }
 }
