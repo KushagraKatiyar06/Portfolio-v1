@@ -406,26 +406,27 @@
     max-width: 100%;
 }
 
-.live_container_heading, .projects_container_heading, .design_container_heading{
+.live_container_heading, .projects_container_heading, .design_container_heading {
     font-size: clamp(1.25rem, 4vw, 1.75rem);
     font-weight: 400; 
     margin: 0; 
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    max-width: 100%;
-
 }
-
 
 .live_projects, .projects_projects, .design_projects {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    gap: 2rem;
     max-width: 100%;
 }
+
 
 .card_container {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 .live_project_card, .project_card {
@@ -437,10 +438,16 @@
     border:rgba(255, 255, 255) 1px solid;
     min-height: 26.5rem;
     max-height: 26.5rem;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 
 .live_project_card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project_card:hover{
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -536,10 +543,10 @@
     transform: scale(1.2) 
     translateY(-3px); }
 
-.icon_wrapper_p::after {
+.icon_wrapper_p:after {
     content: attr(data-label);
     position: absolute;
-    bottom: -2.2rem;
+    bottom: -1rem;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.85);
@@ -558,7 +565,8 @@
     opacity: 1; 
     transform: 
     translateX(-50%) 
-    translateY(3px); }
+    translateY(3px);
+ }
 
 
 /*  Mobile Layout  */
