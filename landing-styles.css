@@ -143,6 +143,16 @@ body {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 .socials a {
     opacity: 0; 
