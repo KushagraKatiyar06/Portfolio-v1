@@ -127,6 +127,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.15rem; 
+    
 }
 
 .skills_inner_container {
@@ -145,6 +146,7 @@
 }
 
 .tech_icons {
+    flex-wrap: wrap; 
     display: flex;
     gap: 1.25rem;
     align-items: center;

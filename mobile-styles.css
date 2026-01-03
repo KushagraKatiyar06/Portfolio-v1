@@ -39,6 +39,13 @@
         width: 100%;
         align-items: center;
     }
+
+    .about.content_screen {
+        padding-left: 0 !important;
+        padding-top: 12vh;
+        width: 90%;
+        align-items: center;
+    }
     
 /* Hero */
     .hero {
