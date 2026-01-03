@@ -1,0 +1,142 @@
+@media screen and (max-width: 768px) {
+    
+    body::after {
+        display: none !important;
+    }
+
+    body {
+        background-attachment: scroll; 
+        min-height: 100vh;
+    }
+
+    /* Landing Section */
+    .hero {
+        flex-direction: column;
+        padding-left: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero_text_container {
+        align-items: center;
+    }
+
+    .image_container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .socials {
+        right: 5vw;
+        gap: 20px;
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 90%;
+        padding: 0.5rem 1rem;
+        gap: 1rem;
+        top: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.9); 
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        pointer-events: auto;
+        opacity: 1 !important; 
+    }
+
+    .nav_links {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .nav_logo_container {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Content Screens */
+    #about.content_screen, 
+    #experience.content_screen, 
+    #projects.content_screen {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 10vh;
+        width: 90%;
+    }
+
+    /* Bio & Skills */
+    .bio_container, .bio {
+        max-width: 100%;
+    }
+
+    .line1 {
+        width: 100%;
+    }
+
+    .skills_inner_container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .tech_icons {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .tech_icons img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    /* Experience Section */
+    .timeline_container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .experience_header_row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .place_container {
+        flex-wrap: wrap;
+    }
+
+    .duration_style {
+        margin-left: 0;
+        text-align: left;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .role_description {
+        padding-left: 0;
+        font-size: 0.9rem;
+    }
+
+    .role_skills {
+        padding-left: 0;
+    }
+
+    /* Projects Section */
+    .live_projects, .projects_projects {
+        justify-content: center;
+    }
+
+    .live_project_card, .project_card {
+        width: 85vw;
+        min-height: auto;
+        max-height: none;
+        padding-bottom: 1.5rem;
+    }
+
+    .project_title {
+        min-height: auto;
+    }
+}
