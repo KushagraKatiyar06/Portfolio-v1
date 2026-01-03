@@ -1,6 +1,6 @@
 # Kushagra Katiyar | Portfolio.v1
 
-A personal portfolio website featuring a high-performance automotive aesthetic (RX-7) with custom scroll interactions, dynamic tab switching, and responsive design.
+A personal portfolio website featuring an aesthetic (RX-7) with custom scroll interactions, dynamic tab switching, and responsive design.
 
 # Tech Stack
 
