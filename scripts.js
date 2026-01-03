@@ -8,6 +8,18 @@ let autoScrollInterval = null;
         }
     }
 
+    // adjust page height based on active tab content
+    function updateScrollHeight() {
+        const activeScreen = document.querySelector('.content_screen.active');
+        const secondFold = document.querySelector('.second-fold');
+        
+        if (activeScreen && secondFold) {
+            const contentHeight = activeScreen.offsetHeight;
+            const navbarHeight = 150; 
+            secondFold.style.minHeight = `${contentHeight + navbarHeight + 50}px`;
+        }
+    }
+
     //Scroll Animation
     function smoothScrollTo(targetY, duration) {
         stopAutoScroll(); 
@@ -36,13 +48,14 @@ let autoScrollInterval = null;
 
     window.addEventListener('wheel', stopAutoScroll, { passive: true });
     window.addEventListener('touchmove', stopAutoScroll, { passive: true });
+    window.addEventListener('resize', updateScrollHeight);
 
-    // Section 1: Continue Button
+
     const continueBtn = document.querySelector('.continue_prompt_container');
     continueBtn.addEventListener('click', () => {
         smoothScrollTo(window.innerHeight, 2000);
     });
-    // Section 2: Logo Button (Back to Top)
+
     const logoBtn = document.getElementById("back_to_top");
     logoBtn.addEventListener('click', () => {
         smoothScrollTo(0, 2000);
@@ -79,20 +92,20 @@ navItems.forEach(item => {
     item.addEventListener('click', () => {
         const targetId = item.getAttribute('data-target');
 
-        // Check if targetId exists to prevent errors
         if (!targetId) return;
 
-        // Remove active from all nav items
         navItems.forEach(nav => nav.classList.remove('active'));
-        
-        // Remove active from all content screens
         screens.forEach(screen => screen.classList.remove('active'));
 
-        // Set clicked item and its target screen to active
         item.classList.add('active');
         const targetScreen = document.getElementById(targetId.toLowerCase());
         if (targetScreen) {
             targetScreen.classList.add('active');
+
+            setTimeout(updateScrollHeight, 50);
         }
     });
 });
+
+
+window.addEventListener('load', updateScrollHeight);
