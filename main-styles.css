@@ -504,7 +504,18 @@
     transition: transform 0.3s ease;
 }
 
+.drive_card_icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+    transition: transform 0.3s ease;
+}
+
 .project_github_link:hover .github_card_icon { 
+    transform: scale(1.2); 
+}
+
+.project_drive_link:hover .drive_card_icon { 
     transform: scale(1.2); 
 }
 
