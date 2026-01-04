@@ -1,10 +1,10 @@
 @media screen and (pointer: coarse) {
     body::after {
-        display: none !important; 
+        display: none; 
     }
 
     body {
-        background-image: none !important; 
+        background-image: none; 
         background-color: #000;
     }
 
@@ -17,8 +17,7 @@
         height: 100%;
         
         background-image: 
-            linear-gradient(rgba(0,0,0, var(--scroll-opacity)), rgba(0,0,0, var(--scroll-opacity))),
-            url('assets/rx7_background.jpg');
+        url('assets/rx7_background.jpg');
         background-repeat: no-repeat;            
         background-size: cover;                  
         background-position: center;   
@@ -30,15 +29,15 @@
     #about.content_screen, 
     #experience.content_screen, 
     #projects.content_screen {
-        padding-left: 0 !important;
+        padding-left: 0;
         padding-top: 12vh;
         width: 100%;
         align-items: center;
-        min-height: auto !important;
+        min-height: auto;
     }
 
     .about.content_screen {
-        padding-left: 0 !important;
+        padding-left: 0;
         padding-top: 12vh;
         width: 90%;
         align-items: center;
@@ -100,7 +99,7 @@
     }
 
     .line1 {
-        width: 90%;
+        width: 31rem;
     }
 
 /* Experience */
@@ -131,12 +130,12 @@
 
     /* Projects */
     .live_projects, .projects_projects, .design_projects {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        gap: 2.5rem !important;
-        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 2.5rem;
+        padding: 0;
     }
 
     .card_container {
@@ -146,10 +145,10 @@
     }
 
     .live_project_card, .project_card {
-        width: 100% !important;
+        width: 100;
         max-width: 22rem;
-        min-height: auto !important;
-        max-height: none !important;
+        min-height: auto;
+        max-height: none;
         padding-bottom: 1.5rem;
     }
 }
