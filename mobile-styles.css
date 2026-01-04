@@ -99,6 +99,10 @@
         margin-top: 2rem; 
     }
 
+    .line2 {
+        width: 100%;
+    }
+
 /* Experience */
     .experience_header_row {
         flex-direction: column;
