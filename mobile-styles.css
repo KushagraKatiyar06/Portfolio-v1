@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (pointer: coarse) {
     body::after {
         display: none !important; 
     }
@@ -27,10 +27,6 @@
         pointer-events: none;
     }
 
-    body::after {
-        display: none !important; 
-    }
-
     #about.content_screen, 
     #experience.content_screen, 
     #projects.content_screen {
@@ -38,6 +34,7 @@
         padding-top: 12vh;
         width: 100%;
         align-items: center;
+        min-height: auto !important;
     }
 
     .about.content_screen {
@@ -94,24 +91,13 @@
         font-size: 1rem;
     }
 
-
-    #about.content_screen, 
-    #experience.content_screen, 
-    #projects.content_screen {
-        padding-left: 0 !important;
-        padding-top: 12vh;
-        width: 100%;
-        align-items: center;
-
-        min-height: auto !important;
-    }
-
     /* About */
 
     .bio_container, .technical_container, .timeline_container, .projects_container, .live_container, .design_container {
         width: 90%;
         max-width: 90%;
         margin-top: 2rem; 
+    }
 
     .line1 {
         width: 90%;
@@ -166,5 +152,4 @@
         max-height: none !important;
         padding-bottom: 1.5rem;
     }
-}
 }
