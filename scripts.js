@@ -102,6 +102,12 @@ navItems.forEach(item => {
         if (targetScreen) {
             targetScreen.classList.add('active');
 
+        
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+
             setTimeout(updateScrollHeight, 50);
         }
     });
