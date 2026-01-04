@@ -92,10 +92,14 @@
 
     /* About */
 
-    .bio_container, .technical_container, .timeline_container, .projects_container, .live_container, .design_container {
+    .bio_container, .technical_container, .projects_container, .live_container, .design_container {
         width: 90%;
         max-width: 90%;
         margin-top: 2rem; 
+    }
+
+    .timeline_container {
+        width: 100%;
     }
 
     .line1 {
