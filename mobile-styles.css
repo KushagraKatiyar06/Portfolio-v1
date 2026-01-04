@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait){
     body::after {
         display: none !important; 
     }
@@ -113,10 +113,11 @@
         max-width: 90%;
         margin-top: 2rem; 
 
-    .line1 {
-        width: 90%;
-        opacity: 0;
-    }
+.line1 {
+    width: 90%;
+    opacity: 0;
+}
+    
 
 /* Experience */
     .experience_header_row {
