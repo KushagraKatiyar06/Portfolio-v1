@@ -1,4 +1,4 @@
-@media screen and ((max-width: 768px) or (orientation: portrait) or (pointer: coarse)){
+@media screen and ((max-width: 768px) or (pointer: coarse)){
     body::after {
         display: none !important; 
     }
