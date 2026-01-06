@@ -27,6 +27,18 @@ body {
     overflow-x: hidden;
     
     transition: background-image 0.1s ease; 
+
+}
+
+html, body {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .hero {
