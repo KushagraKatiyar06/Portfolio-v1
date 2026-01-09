@@ -467,24 +467,41 @@
     max-width: 95%;
 }
 
-.live_meta_row, .meta_row {
+.live_row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    max-width: 95%;
-    margin-bottom: 0.7rem;
-}
-
-.meta_row {
-    justify-content: flex-start;
+    gap: 8rem;
 }
 
 .users { 
     display: flex; 
     align-items: center; 
     gap: 0.25rem; 
+    margin-top: -1rem;
 }
+
+.live_meta_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin-bottom: 0.7rem;
+    gap: 1rem;
+    margin-left: -0.5rem;
+}
+
+.meta_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 95%;
+    margin-bottom: 0.7rem;
+    margin-right: 1.3rem;
+    gap: 1rem;
+}
+
 
 .user_icon { 
     width:  1.75rem; 
@@ -494,6 +511,7 @@
 
 .user_count { 
     font-size: 1.2rem; 
+    width: 3rem;
     margin: 0; 
     text-shadow: 0 0 5px white; 
 }
@@ -505,6 +523,36 @@
     transition: transform 0.3s ease;
 }
 
+.github_card_icon_hidden {
+    width: 1.75rem;
+    height: 1.75rem;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.project_github_link_hidden {
+    pointer-events: none;
+}
+
+
+.video_card_icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+    transition: transform 0.3s ease;
+}
+
+.video_card_icon_hidden {
+    width: 1.75rem;
+    height: 1.75rem;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.project_video_link_hidden {
+    pointer-events: none;
+}
+
 .drive_card_icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -512,11 +560,15 @@
     transition: transform 0.3s ease;
 }
 
-.project_github_link:hover .github_card_icon { 
+.github_card_icon:hover { 
     transform: scale(1.2); 
 }
 
-.project_drive_link:hover .drive_card_icon { 
+.video_card_icon:hover { 
+    transform: scale(1.2); 
+}
+
+.drive_card_icon:hover { 
     transform: scale(1.2); 
 }
 
