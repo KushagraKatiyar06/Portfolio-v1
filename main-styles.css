@@ -489,6 +489,17 @@
     max-width: 95%;
     margin-bottom: 0.7rem;
     gap: 1rem;
+    margin-left: -3rem;
+}
+
+.live_meta_row_p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin-bottom: 0.7rem;
+    gap: 1rem;
     margin-left: -0.5rem;
 }
 
@@ -558,6 +569,18 @@
     height: 1.75rem;
     filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
     transition: transform 0.3s ease;
+}
+
+.figma_card_icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+    transition: transform 0.3s ease;
+}
+
+
+.figma_card_icon:hover { 
+    transform: scale(1.2); 
 }
 
 .github_card_icon:hover { 
