@@ -75,13 +75,13 @@ body::-webkit-scrollbar {
 }
 
 .profile_image {
-    width: 100%; 
+    width: 110%; 
     height: auto; 
     object-fit: cover;
 
     position: relative;
     top: -7px; 
-    left: 10px;
+    left: 7px;
 }
 
 .hero_text_container {
