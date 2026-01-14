@@ -75,12 +75,12 @@ body::-webkit-scrollbar {
 }
 
 .profile_image {
-    width: 140%; 
+    width: 100%; 
     height: auto; 
     object-fit: cover;
 
     position: relative;
-    top: -20px; 
+    top: -7px; 
     left: 10px;
 }
 
