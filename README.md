@@ -1,6 +1,6 @@
 # Kushagra Katiyar | Portfolio.v1
 
-A personal portfolio website featuring an RX-7 with custom scroll interactions and dynamic tab switching. The background image is taken by me on Need for Speed 2015. There is also full mobile compatability. I took the picture on Need For Speed 2015.
+A personal portfolio website featuring an RX-7 with custom scroll interactions and dynamic tab switching. The background image is taken by me on Need for Speed 2015. There is also full mobile compatability. 
 
 Here it is: https://kushagrakatiyar06.github.io/Portfolio-v1/
 
