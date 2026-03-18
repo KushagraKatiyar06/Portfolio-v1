@@ -1,5 +1,9 @@
 /* Changed from max-width/orientation to pointer detection */
 @media screen and (pointer: coarse) and (hover: none) {
+  .desktop-vfx {
+    display: none !important;
+  }
+
   body::after {
     display: none !important;
   }
