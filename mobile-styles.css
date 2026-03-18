@@ -1,155 +1,174 @@
 /* Changed from max-width/orientation to pointer detection */
 @media screen and (pointer: coarse) and (hover: none) {
-    body::after {
-        display: none !important; 
-    }
+  body::after {
+    display: none !important;
+  }
 
-    body {
-        background-image: none !important; 
-        background-color: #000;
-    }
+  body {
+    background-image: none !important;
+    background-color: #000;
+  }
 
-    body::before {
-        content: "";
-        position: fixed; 
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        
-        background-image: 
-            linear-gradient(rgba(0,0,0, var(--scroll-opacity)), rgba(0,0,0, var(--scroll-opacity))),
-            url('assets/rx7_background.jpg');
-        background-repeat: no-repeat;            
-        background-size: cover;                  
-        background-position: center;   
-        
-        z-index: -2; 
-        pointer-events: none;
-    }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-    #about.content_screen, 
-    #experience.content_screen, 
-    #projects.content_screen {
-        padding-left: 0 !important;
-        padding-top: 12vh;
-        width: 100%;
-        align-items: center;
-        min-height: auto !important;
-    }
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, var(--scroll-opacity)),
+        rgba(0, 0, 0, var(--scroll-opacity))
+      ),
+      url("assets/rx7_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    .about.content_screen {
-        padding-left: 0 !important;
-        padding-top: 12vh;
-        width: 90%;
-        align-items: center;
-    }
-    
-/* Hero */
-    .hero {
-        flex-direction: column;
-        padding-left: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        text-align: center;
-        gap: 1.5rem;
-    }
+    z-index: -2;
+    pointer-events: none;
+  }
 
-    .hero_text_container {
-        align-items: center;
-    }
+  #about.content_screen,
+  #experience.content_screen,
+  #projects.content_screen {
+    padding-left: 0 !important;
+    padding-top: 12vh;
+    width: 100%;
+    align-items: center;
+    min-height: auto !important;
+  }
 
-    .specialty, .location {
-        justify-content: center;
-        width: 100%;
-        gap: 0.5rem;
-    }
-    
-    .location {
-        margin-right: 0.75rem;
-    }
+  .about.content_screen {
+    padding-left: 0 !important;
+    padding-top: 12vh;
+    width: 90%;
+    align-items: center;
+  }
 
-    .location_icon, .laptop_icon {
-        width: 24px;
-        height: 24px;
-        margin: 0;
-    }
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    padding-left: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    gap: 1.5rem;
+  }
 
-/* Navbar */
-    .navbar {
-        width: 90%;
-        padding: 0.5rem 1rem;
-        gap: 1rem;
-        background: rgba(0, 0, 0, 0.9);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        opacity: var(--glow-opacity, 0);
-        pointer-events: auto;
-    }
+  .hero_text_container {
+    align-items: center;
+  }
 
-    .nav_links {
-        gap: 1rem;
-        font-size: 1rem;
-    }
+  .specialty,
+  .location {
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
 
-    /* About */
-    .bio_container, .technical_container, .timeline_container, .projects_container, .live_container, .design_container {
-        width: 90%;
-        max-width: 90%;
-        margin-top: 2rem; 
-    }
+  .location {
+    margin-right: 0.75rem;
+  }
 
-    .line2 {
-        width: 100%;
-    }
+  .location_icon,
+  .laptop_icon {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
 
-/* Experience */
-    .experience_header_row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
+  /* Navbar */
+  .navbar {
+    width: 90%;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: var(--glow-opacity, 0);
+    pointer-events: auto;
+  }
 
-    .experience_header, .leadership_header, .involvement_header, .live_container_heading, .projects_container_heading, .design_container_heading {
-        font-size: 1.5rem;
-    }
+  .nav_links {
+    gap: 1rem;
+    font-size: 1rem;
+  }
 
-    .place_container {
-        flex-wrap: wrap;
-        gap: 0.75rem;
-    }
+  /* About */
+  .bio_container,
+  .technical_container,
+  .timeline_container,
+  .projects_container,
+  .live_container,
+  .design_container {
+    width: 90%;
+    max-width: 90%;
+    margin-top: 2rem;
+  }
 
-    .duration_style {
-        margin-left: 0;
-        text-align: left;
-        width: 100%;
-    }
+  .line2 {
+    width: 100%;
+  }
 
-    .role_description, .role_skills {
-        padding-left: 0;
-    }
+  /* Experience */
+  .experience_header_row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 
-    /* Projects */
-    .live_projects, .projects_projects, .design_projects {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        gap: 2.5rem !important;
-        padding: 0 !important;
-    }
+  .experience_header,
+  .leadership_header,
+  .involvement_header,
+  .live_container_heading,
+  .projects_container_heading,
+  .design_container_heading {
+    font-size: 1.5rem;
+  }
 
-    .card_container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  .place_container {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
 
-    .live_project_card, .project_card {
-        width: 100% !important;
-        max-width: 22rem;
-        min-height: auto !important;
-        max-height: none !important;
-        padding-bottom: 1.5rem;
-    }
+  .duration_style {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .role_description,
+  .role_skills {
+    padding-left: 0;
+  }
+
+  /* Projects */
+  .live_projects,
+  .projects_projects,
+  .design_projects {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 2.5rem !important;
+    padding: 0 !important;
+  }
+
+  .card_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .live_project_card,
+  .project_card {
+    width: 100% !important;
+    max-width: 22rem;
+    min-height: auto !important;
+    max-height: none !important;
+    padding-bottom: 1.5rem;
+  }
 }
