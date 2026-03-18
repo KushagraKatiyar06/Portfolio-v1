@@ -31,9 +31,41 @@ body {
   transition: background-image 0.1s ease;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  z-index: 1000;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  font-family: "Imprima", sans-serif;
+}
+
+a:focus-visible,
+[role="button"]:focus-visible,
+.nav_item:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
 html,
 body {
-  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
@@ -312,6 +344,16 @@ body::after {
 }
 
 .nav_item {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+
   position: relative;
   cursor: pointer;
   transition: color 0.3s ease;

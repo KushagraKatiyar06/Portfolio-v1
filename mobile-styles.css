@@ -38,7 +38,7 @@
     padding-top: 12vh;
     width: 100%;
     align-items: center;
-    min-height: auto !important;
+    min-height: 0 !important;
   }
 
   .about.content_screen {
@@ -167,7 +167,7 @@
   .project_card {
     width: 100% !important;
     max-width: 22rem;
-    min-height: auto !important;
+    min-height: 0 !important;
     max-height: none !important;
     padding-bottom: 1.5rem;
   }

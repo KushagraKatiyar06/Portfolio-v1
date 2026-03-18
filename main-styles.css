@@ -432,6 +432,11 @@
   display: block;
 }
 
+.card_link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .live_project_card,
 .project_card {
   width: 20rem;
@@ -451,6 +456,13 @@
 .project_card:hover {
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.role:focus-visible,
+.live_project_card:focus-visible,
+.project_card:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
 }
 
 .project_image {
