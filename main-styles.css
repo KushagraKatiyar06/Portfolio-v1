@@ -379,6 +379,27 @@
   bottom: -2.2rem;
 }
 
+/* Org Grouping (LinkedIn-style) */
+.org_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.org_group .role:not(.role_continuation) {
+  position: relative;
+}
+
+.org_group .role:not(.role_continuation)::after {
+  content: '';
+  position: absolute;
+  left: 1.4rem;
+  top: 3rem;
+  bottom: -2.5rem;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(177, 135, 255, 0.55), rgba(177, 135, 255, 0.35));
+  pointer-events: none;
+}
+
 /* Projects Section  */
 #projects.content_screen {
   flex-direction: column;
@@ -450,6 +471,23 @@
   min-height: 26.5rem;
   max-height: 26.5rem;
   background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.winner_badge {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  background: linear-gradient(135deg, #f5d020, #e8a800);
+  color: #1a1100;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.2rem 0.45rem;
+  letter-spacing: 0.06em;
+  z-index: 2;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(245, 208, 32, 0.55);
+  pointer-events: none;
 }
 
 .live_project_card:hover,
