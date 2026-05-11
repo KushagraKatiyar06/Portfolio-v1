@@ -105,9 +105,7 @@
   .bio_container,
   .technical_container,
   .timeline_container,
-  .projects_container,
-  .live_container,
-  .design_container {
+  .proj_wrapper {
     width: 90%;
     max-width: 90%;
     margin-top: 2rem;
@@ -117,20 +115,22 @@
     width: 100%;
   }
 
+  /* Sub-tab bars */
+  .sub_tab_bar {
+    margin-right: 0;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .sub_tab_btn {
+    font-size: 0.72rem;
+    padding: 8px 10px 7px;
+  }
+
   /* Experience */
   .experience_header_row {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-  }
-
-  .experience_header,
-  .leadership_header,
-  .involvement_header,
-  .live_container_heading,
-  .projects_container_heading,
-  .design_container_heading {
-    font-size: 1.5rem;
   }
 
   .place_container {
@@ -150,20 +150,21 @@
   }
 
   /* Projects */
-  .live_projects,
-  .projects_projects,
-  .design_projects {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    gap: 2.5rem !important;
-    padding: 0 !important;
+  .proj_header_row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 
-  .card_container {
+  #proj_content {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    align-items: start;
+  }
+
+  #proj_content .card_container {
     width: 100%;
-    display: flex;
     justify-content: center;
   }
 
